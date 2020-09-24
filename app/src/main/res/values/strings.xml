@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">App Dresses</string>
+    <string name="salir_de_la_cuenta">Salir de la cuenta</string>
+    <string name="correo">Correo</string>
+    <string name="contrase_a">Contraseña</string>
+    <string name="confirma_contrase_a">Confirma contraseña</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="nombre_completo">Nombre completo</string>
+    <string name="no_tienes_cuenta_registrate_aqui">No tienes cuenta? Registrate aqui</string>
+    //Orden parte 1
+    <string name="insertar_datosC">Insertar los datos del cliente</string>
+    <string name="Nombre_mama">Nombre de la Mama:</string>
+    <string name="NombreU">Nombre:</string>
+    <string name="Insertar_texto">Inserta Texto</string>
+    <string name="Fecha_de_pedido">Fecha de Pedido:</string>
+    <string name="Fecha_de_evento">Fecha de Evento:</string>
+    <string name="Fecha_de_medidas">Fecha de Medidas:</string>
+    <string name="Fecha_de_pruebas">Fecha de Pruebas:</string>
+    <string name="tel">Telefono:</string>
+    <string name="color">Color:</string>
+    <string name="anticipo">Anticipo:</string>
+    <string name="insertar_numero">Insertar Número Telefonico</string>
+    <string name="cu_pagar">$</string>
+    <string name="precio">Precio:</string>
+    //Orden parte 2
+    <string name="insertar_medidasC">Insertar las medidas del cliente</string>
+    <string name="Pinza_de_busto">Pinza de busto:</string>
+    <string name="Distancia_de_busto">Distancia de busto:</string>
+    <string name="Busto">Busto:</string>
+    <string name="Frente">Frente:</string>
+    <string name="Espalda">Espalda:</string>
+    <string name="Cintura">Cintura</string>
+    <string name="Talla_frente">Talla frente:</string>
+    <string name="Talla_espalda">Talla espalda:</string>
+    <string name="Cadera">Cadera:</string>
+    <string name="Largo_de_la_falda">Largo de la falda:</string>
+    <string name="Largo_de_la_manga">Largo de la manga:</string>
+    <string name="Puno_alto">Puño alto:</string>
+    <string name="Puno_bajo">Puño bajo:</string>
+    //Orden parte 3
+    <string name="Por_ultimo">Por ultimo inserta los comentarios</string>
+    <string name="Caract">Características:</string>
+    <string name="Telas">Telas:</string>
+    //Orden en progreso
+    <string name="Saldo_deber">Saldo a deber:</string>
+    <string name="Para_finalizar">Para finalizar trabajo \n hacer clic en</string>
+    <string name="Nombre_Persona">Nombre de la persona</string>
+    <string name="Nomb_ma">Nombre de la mama</string>
+    <string name="Fecha_E">Fecha de evento: DD/MM/AAAA</string>
+    <string name="Fecha_P">Fecha de pedido: DD/MM/AAAA</string>
+    <string name="Fecha_M">Fecha de medidas: DD/MM/AAAA</string>
+    <string name="Fecha_Prue">Fecha de pruebas: DD/MM/AAAA a DD/MM/AAAAA</string>
+    <string name="telef">Teléfono:</string>
+    <string name="Color_V">Color del Vestido:</string>
+    <string name="Ant">Anticipo:</string>
+    //Medidas Proyecto en progreso
+    <string name="cara">CARACTERISTICAS</string>
+    <string name="telas">TELAS</string>
+    <string name="pinDeBusto">PINZA DE BUSTO</string>
+    <string name="distDeBusto">DISTANCIA DE \n BUSTO</string>
+    <string name="busto">BUSTO</string>
+    <string name="frente">FRENTE</string>
+    <string name="espalda">ESPALDA</string>
+    <string name="cintura">CINTURA</string>
+    <string name="tallaFrente">TALLA FRENTE</string>
+    <string name="tallaEspalda">TALLA ESPALDA</string>
+    <string name="cadera">CADERA</string>
+    <string name="largoManga">LARGO MANGA</string>
+    <string name="largoFalda">LARGO FALDA</string>
+    <string name="punoAlto">PUÑO ALTO</string>
+    <string name="punoBajo">PUÑO BAJO</string>
+    <string name="cm">CM</string>
+    //botones
+    <string name="boton_siguiente">Siguiente</string>
+    <string name="boton_regresar">Regresar</string>
+    <string name="boton_finalizar">Finalizar</string>
+    <string name="boton_Pagar">Pagar</string>
+    <string name="boton_editar">Editar</string>
+    <string name="boton_medidas">Medidas</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
