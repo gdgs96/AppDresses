@@ -64,14 +64,13 @@
         android:id="@+id/btn_signIn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:background="@drawable/shape_parrafo"
+        android:onClick="loginIn"
         android:text="Sign in"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
-        app:layout_constraintVertical_bias="0.422"
-        android:background="@drawable/shape_parrafo"/>
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <ProgressBar
         android:id="@+id/progressBar_signIn"
@@ -86,13 +85,26 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
 
     <TextView
-        android:id="@+id/txt_signUp"
+        android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/no_tienes_cuenta_registrate_aqui"
+        android:onClick="forgotPasswordIn"
+        android:text="@string/Se_te_olvido"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/btn_signIn" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="registerIn"
+        android:text="@string/no_tienes_cuenta_registrate_aqui"
+        android:background="@color/colorboton2"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/textView5"
         app:layout_constraintTop_toBottomOf="@+id/btn_signIn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
