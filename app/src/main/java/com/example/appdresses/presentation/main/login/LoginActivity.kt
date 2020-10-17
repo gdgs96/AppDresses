@@ -9,7 +9,6 @@ import android.widget.ProgressBar
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.appdresses.R
-import com.example.appdresses.presentation.main.view.HomeFragment
 import com.example.appdresses.presentation.main.view.MainActivityNav
 import com.google.firebase.auth.FirebaseAuth
 

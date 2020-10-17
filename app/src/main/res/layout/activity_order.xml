@@ -2,8 +2,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.appdresses.presentation.main.view.OrderFragment">
+    android:layout_height="match_parent">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -15,31 +14,31 @@
             android:padding="10dp">
 
             <Button
-                android:id="@+id/btnfo_back"
+                android:onClick="btnfo_back"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/boton_regresar"
                 android:background="@drawable/shape_parrafo"
                 android:drawableLeft="@drawable/ic_arrowback"
                 android:padding="5dp"/>
-                <LinearLayout
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="20dp"
+                android:layout_marginBottom="10dp">
+                <ImageView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:padding="20dp"
-                    android:layout_marginBottom="10dp">
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_note"/>
+                    android:src="@drawable/ic_note"/>
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/insertar_datosC"
-                        android:textColor="#000000"
-                        android:textSize="20sp" />
-                </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/insertar_datosC"
+                    android:textColor="#000000"
+                    android:textSize="20sp" />
+            </LinearLayout>
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -76,15 +75,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/Fecha_de_pedido"/>
+
                     <EditText
                         android:id="@+id/etF_Pedido"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="date"
-                        android:focusable="false"
-                        android:clickable="true"
-                        android:maxLines="1"
-                        android:drawableRight="@drawable/ic_expand_more"/>
+                        android:ems="10"
+                        android:inputType="date" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -93,11 +91,9 @@
                         android:id="@+id/etF_Evento"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:inputType="date"
-                        android:focusable="false"
-                        android:clickable="true"
-                        android:maxLines="1"
-                        android:drawableRight="@drawable/ic_expand_more"/>
+                        android:ems="10"
+                        android:inputType="date" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -105,19 +101,17 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="40dp"
                         android:layout_margin="10dp"
                         android:orientation="horizontal">
 
                         <EditText
-                            android:id="@+id/etPruebas1"
+                            android:id="@+id/etPruebas"
                             android:layout_width="170dp"
                             android:layout_height="match_parent"
-                            android:clickable="true"
-                            android:focusable="false"
-                            android:inputType="date"
-                            android:maxLines="1"
-                            android:drawableRight="@drawable/ic_expand_more"/>
+                            android:ems="10"
+                            android:inputType="date" />
+
 
                         <TextView
                             android:layout_width="wrap_content"
@@ -127,12 +121,10 @@
                         <EditText
                             android:id="@+id/etPruebas2"
                             android:layout_width="170dp"
-                            android:layout_height="wrap_content"
-                            android:clickable="true"
-                            android:focusable="false"
-                            android:inputType="date"
-                            android:maxLines="1"
-                            android:drawableRight="@drawable/ic_expand_more"/>
+                            android:layout_height="match_parent"
+                            android:ems="10"
+                            android:inputType="date" />
+
                     </LinearLayout>
                     <TextView
                         android:layout_width="wrap_content"
@@ -184,7 +176,7 @@
                         android:gravity="end" />
 
                     <Button
-                        android:id="@+id/btn_sig"
+                        android:onClick="btn_sig"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/boton_siguiente"
