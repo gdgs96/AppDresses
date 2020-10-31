@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.appdresses.R
 import com.example.appdresses.presentation.main.view.MainActivityNav
 import com.google.firebase.auth.FirebaseAuth
+import org.jetbrains.anko.startActivity
 
 class LoginActivity : AppCompatActivity() {
 
@@ -47,9 +48,8 @@ class LoginActivity : AppCompatActivity() {
             auth.signInWithEmailAndPassword(user,password)
                 .addOnCompleteListener(this){
                     task ->
-
                     if(task.isSuccessful){
-                        action()
+                        action(user)
                     }else{
                         Toast.makeText(this,"Error en la autenticacion", Toast.LENGTH_LONG).show()
                     }
@@ -57,8 +57,11 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-    private fun action(){
+    private fun action(user:String){
+        /* Esto es una manera de mandar a otro activitie algun dato
+        val intent:Intent = Intent((this),MainActivityNav::class.java)
+        intent.putExtra("Email",user)*/
         progressBar.visibility=View.GONE
-        startActivity(Intent(this, MainActivityNav::class.java))
+        startActivity(Intent(this,MainActivityNav::class.java))
     }
 }

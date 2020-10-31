@@ -11,9 +11,15 @@ class MainActivityNav : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_navmain)
 
+        /*Recibe los datos de otra activitie
+        val objetoIntent: Intent=intent
+        var user = objetoIntent.getStringExtra("Email")*/
+
+
     }
 
     fun boton(view: View){
         startActivity(Intent(this, orderActivity::class.java))
     }
+
 }
