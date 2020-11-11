@@ -181,6 +181,7 @@
                 android:inputType="numberDecimal"
                 android:hint="@string/Insertar_texto"/>
             <Button
+                android:id="@+id/btnsig"
                 android:onClick="btn_sig"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
