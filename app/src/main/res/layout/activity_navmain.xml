@@ -24,8 +24,9 @@
                 app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
                 <TextView
+                    android:onClick="salir"
                     android:id="@+id/salir_Cuenta"
-                    android:layout_width="match_parent"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="end"
                     android:text="@string/salir_de_la_cuenta"
@@ -33,7 +34,16 @@
                     android:textColor="#FFFFFF"
                     android:textStyle="bold"
                     android:layout_marginEnd="8dp" />
-
+                <TextView
+                    android:id="@+id/email_cuenta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:text="@string/email_cuenta"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="8dp" />
                 <Button
                     android:onClick="boton"
                     android:layout_width="match_parent"

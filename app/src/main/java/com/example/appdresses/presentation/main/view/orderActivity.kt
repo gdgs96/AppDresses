@@ -29,7 +29,16 @@ class orderActivity : AppCompatActivity() {
     private lateinit var etAnticipo:EditText
     private lateinit var etPrecio:EditText
 
+    lateinit var tMama:String
     lateinit var tNom:String
+    lateinit var fPedido:String
+    lateinit var fEvento:String
+    lateinit var tPruebas:String
+    lateinit var tPruebas2:String
+    lateinit var tTelefono:String
+    lateinit var tColor:String
+    lateinit var tAnticipo:String
+    lateinit var tPrecio:String
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -47,12 +56,6 @@ class orderActivity : AppCompatActivity() {
         auth= FirebaseAuth.getInstance()
         //Con esto se obtiene los datos del logeo
 
-        var currentUser = auth.currentUser
-        println(currentUser)
-        val a : Bundle = Bundle()
-        a.putString("email", currentUser.toString())
-        intent.putExtras(a)
-
         saveButton.setOnClickListener {
             validateText()
             // Con esto se tomaran los datos pero se deben tomar hasta el final de la 3era
@@ -65,7 +68,7 @@ class orderActivity : AppCompatActivity() {
     fun action(){
 
         var intent = Intent(this, order2Activity::class.java)
-        var order1 = hashMapOf("nombreMama" to editT_mama.text.toString(),
+        /*var order1 = hashMapOf("nombreMama" to editT_mama.text.toString(),
             "editT_nom" to editT_nom.text.toString(),
             "etF_Pedido" to etF_Pedido.text.toString(),
             "etF_Evento" to etF_Evento.text.toString(),
@@ -74,22 +77,53 @@ class orderActivity : AppCompatActivity() {
             "etTelefono" to etTelefono.text.toString(),
             "etColor" to etColor.text.toString(),
             "etAnticipo" to etAnticipo.text.toString(),
-            "etPrecio" to etPrecio.text.toString())
+            "etPrecio" to etPrecio.text.toString())*/
+        tMama=editT_mama.text.toString()
         tNom=editT_nom.text.toString()
+        fPedido=etF_Pedido.text.toString()
+        fEvento=etF_Evento.text.toString()
+        tPruebas=etPruebas.text.toString()
+        tPruebas2=etPruebas2.text.toString()
+        tTelefono=etTelefono.text.toString()
+        tColor=etColor.text.toString()
+        tAnticipo=etAnticipo.text.toString()
+        tPrecio=etPrecio.text.toString()
 
-        val a : Bundle = Bundle()
         val c : Bundle = Bundle()
-        val b : Bundle = Bundle()
+        //val b : Bundle = Bundle()
+        val d : Bundle = Bundle()
+        val f : Bundle = Bundle()
+        val g : Bundle = Bundle()
+        val h : Bundle = Bundle()
+        val i : Bundle = Bundle()
+        val j : Bundle = Bundle()
+        val k : Bundle = Bundle()
+        val l : Bundle = Bundle()
+        val m : Bundle = Bundle()
+        d.putString("tMama",tMama)
         c.putString("id",tNom)
-        b.putSerializable("map1",order1)
-        intent.putExtras(b)
+        f.putString("fPedido",fPedido)
+        g.putString("fEvento",fEvento)
+        h.putString("tPruebas",tPruebas)
+        i.putString("tPruebas2",tPruebas2)
+        j.putString("tTelefono",tTelefono)
+        k.putString("tColor",tColor)
+        l.putString("tAnticipo",tAnticipo)
+        m.putString("tPrecio",tPrecio)
+
+        //b.putSerializable("map1",order1)
+        //intent.putExtras(b)
         intent.putExtras(c)
+        intent.putExtras(d)
+        intent.putExtras(f)
+        intent.putExtras(g)
+        intent.putExtras(h)
+        intent.putExtras(i)
+        intent.putExtras(j)
+        intent.putExtras(k)
+        intent.putExtras(l)
+        intent.putExtras(m)
 
-
-
-        /*db.collection(currentUser?.email.toString()).document(tNom)
-            .collection("Order 1").document("Order 1")
-            .set(order1)*/
         startActivity(intent)
     }
 
