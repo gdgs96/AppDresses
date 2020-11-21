@@ -57,6 +57,7 @@
             </com.google.android.material.appbar.CollapsingToolbarLayout>
         </com.google.android.material.appbar.AppBarLayout>
         <androidx.recyclerview.widget.RecyclerView
+            android:onClick="recycler"
             android:id="@+id/rcViewLanding"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>

@@ -1,3 +1,3 @@
 package com.example.appdresses
 
-data class ItemLanding(val name:String, val eventF:String, val tel: Long)
+class ItemLanding(val editT_nom:String, val etF_Evento:String, val etTelefono: String)

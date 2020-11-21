@@ -22,7 +22,7 @@
     <string name="color">Color:</string>
     <string name="anticipo">Anticipo:</string>
     <string name="insertar_numero">Insertar Número Telefonico</string>
-    <string name="cu_pagar">$</string>
+    <string name="cu_pagar"></string>
     <string name="precio">Precio:</string>
     //Orden parte 2
     <string name="insertar_medidasC">Insertar las medidas del cliente</string>
@@ -55,6 +55,7 @@
     <string name="telef">Teléfono:</string>
     <string name="Color_V">Color del Vestido:</string>
     <string name="Ant">Anticipo:</string>
+    <string name="precio1">Precio Total:</string>
     //Medidas Proyecto en progreso
     <string name="cara">CARACTERISTICAS</string>
     <string name="telas">TELAS</string>
