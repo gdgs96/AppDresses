@@ -53,6 +53,7 @@ class MainActivityNav : AppCompatActivity() {
         rcViewLanding.adapter = adapterLanding
 
         print(currentUser?.email.toString())
+        //Recycler view que recibe los datos de la base de datos y muestra los clientes con su pedido pendiente
         db.collection(currentUser?.email.toString()).get().addOnCompleteListener(){
             if (it.isSuccessful){
                 lista.clear()

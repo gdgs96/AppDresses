@@ -64,7 +64,7 @@ class orderActivity : AppCompatActivity() {
         }
 
     }
-
+    //Datos que se obtienen en la primera parte del regristro de un cliente
     fun action(){
 
         var intent = Intent(this, order2Activity::class.java)

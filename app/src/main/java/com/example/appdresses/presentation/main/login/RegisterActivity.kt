@@ -43,7 +43,7 @@ class RegisterActivity : AppCompatActivity(){
     fun register(view:View) {
         createNewAccount()
     }
-
+    //Registro de Cuentas
     private fun createNewAccount(){
         val name:String=etx_fullname.text.toString()
         val email:String=etxt_email_register.text.toString()

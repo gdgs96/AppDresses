@@ -25,7 +25,7 @@ class LastActivity : AppCompatActivity() {
         auth= FirebaseAuth.getInstance()
         var currentUser = auth.currentUser
         val nom = intent.getStringExtra("nom")
-
+        //Activity donde se obtienen los datos de pago y se da baja al pedido
         db.collection(currentUser?.email.toString()).document(nom!!).get().addOnSuccessListener {
             val tAnticipo = it.getString("etAnticipo")?.toInt()
             val tPrecio = it.getString("etPrecio")?.toInt()

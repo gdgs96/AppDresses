@@ -38,6 +38,7 @@ class LoginActivity : AppCompatActivity() {
     fun loginIn(view: View){
         loginUser()
     }
+    //Verificacion de entrada de login
     private fun loginUser(){
         val user:String=txtUser.text.toString()
         val password:String=txtPassword.text.toString()

@@ -75,6 +75,7 @@ class editOrderActivity : AppCompatActivity() {
             tCaract.setText(it.get("etCaract") as String?)
             tTelas.setText(it.get("etTelas") as String?)
         }
+        //Activity donde edita los datos del cliente y los guarda en la base de datos
         saveButton.setOnClickListener{
             var order = hashMapOf("nombreMama" to editT_mama.text.toString(),
                 "editT_nom" to editT_nom.text.toString(),

@@ -57,6 +57,7 @@ class order2Activity : AppCompatActivity() {
     fun btnfo2_back(view: View){
         startActivity(Intent(this, MainActivityNav::class.java))
     }
+    //Segunda parte donde se obtienen los datos del cliente
     fun action(tMama:String?,id:String?,fPedido:String?,fEvento:String?,tPruebas:String?,tPruebas2:String?,tTelefono:String?,tColor:String?,tAnticipo:String?,tPrecio:String?){
         val intent = Intent(this, order3Activity::class.java)
         /*var order2 = hashMapOf("etPinBusto" to etPinBusto.text.toString(),

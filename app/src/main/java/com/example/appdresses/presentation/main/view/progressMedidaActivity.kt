@@ -36,7 +36,7 @@ class progressMedidaActivity : AppCompatActivity() {
         auth= FirebaseAuth.getInstance()
         var currentUser = auth.currentUser
         val nom = intent.getStringExtra("nom")
-
+        //Este obtiene la base de datos de los clientes pendientes y nos la OTRA parte de la informacion
         db.collection(currentUser?.email.toString()).document(nom).get().addOnSuccessListener {
             val t_Carac = it.getString("etCaract")
             val t_Telas = it.getString("etTelas")

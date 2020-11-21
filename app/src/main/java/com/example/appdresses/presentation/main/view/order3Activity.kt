@@ -49,7 +49,7 @@ class order3Activity : AppCompatActivity() {
         /*val map1 = intent.getSerializableExtra("map1")
         val map2 = intent.getSerializableExtra("map2")*/
         var currentUser = auth.currentUser
-
+        //Tercera parte donde se da de alta todo el documento del cliente en la base de datos
         btnfin.setOnClickListener{
             /*db.document(id!!).collection(currentUser?.email.toString())
                 .add(map1)

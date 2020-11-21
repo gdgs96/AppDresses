@@ -35,6 +35,7 @@ class progressOrderActivity : AppCompatActivity() {
 
         val nom = intent.getStringExtra("nom")
         println(nom)
+        //Este obtiene la base de datos de los clientes pendientes y nos da una parte de la informacion
         db.collection(currentUser?.email.toString()).document(nom!!).get().addOnSuccessListener {
             val nom_Mama = it.getString("nombreMama")
             val nomb = it.getString("editT_nom")

@@ -8,7 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.appdresses.R
 import com.example.appdresses.presentation.main.ClickListener
 import kotlinx.android.synthetic.main.item_landing.view.*
-
+//Creacion del recycler View y obtencion de datos para dar imagen de los clientes pendientes
 class AdapterLanding(val lista: ArrayList<ItemLanding>,val context:Context, var clickListener: ClickListener):
     RecyclerView.Adapter<AdapterLanding.ViewHolder>() {
 
