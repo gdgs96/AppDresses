@@ -35,9 +35,9 @@ class progressOrderActivity : AppCompatActivity() {
 
         val nom = intent.getStringExtra("nom")
         println(nom)
-        db.collection(currentUser?.email.toString()).document(nom).get().addOnSuccessListener {
+        db.collection(currentUser?.email.toString()).document(nom!!).get().addOnSuccessListener {
             val nom_Mama = it.getString("nombreMama")
-            val nom = it.getString("editT_nom")
+            val nomb = it.getString("editT_nom")
             val tPedido = it.getString("etF_Pedido")
             val tEvent = it.getString("etF_Evento")
             val tPruebas = it.getString("etPruebas")
@@ -50,7 +50,7 @@ class progressOrderActivity : AppCompatActivity() {
             debe = tPrecio!! - tAnticipo!!
 
             mama_nom.setText("Nombre de la Mama: $nom_Mama")
-            nom_C.setText("Nombre: $nom")
+            nom_C.setText("Nombre: $nomb")
             t_Pedido.setText("Fecha de pedido: $tPedido")
             t_evento.setText("Fecha de evento: $tEvent")
             t_pruebas.setText("Fecha de pruebas: $tPruebas a $tPruebas2")
@@ -62,7 +62,25 @@ class progressOrderActivity : AppCompatActivity() {
         }
 
         btn_Edit.setOnClickListener{
-
+            var intent = Intent(this, editOrderActivity::class.java)
+            val a : Bundle = Bundle()
+            a.putString("nom",nom)
+            intent.putExtras(a)
+            startActivity(intent)
+        }
+        btn_Med.setOnClickListener{
+            var intent = Intent(this, progressMedidaActivity::class.java)
+            val a : Bundle = Bundle()
+            a.putString("nom",nom)
+            intent.putExtras(a)
+            startActivity(intent)
+        }
+        btnfOP_buy.setOnClickListener{
+            var intent = Intent(this, LastActivity::class.java)
+            val a : Bundle = Bundle()
+            a.putString("nom",nom)
+            intent.putExtras(a)
+            startActivity(intent)
         }
 
     }

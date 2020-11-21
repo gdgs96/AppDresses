@@ -20,7 +20,10 @@
                 android:text="@string/boton_regresar"
                 android:background="@drawable/shape_parrafo"
                 android:drawableLeft="@drawable/ic_arrowback"
-                android:padding="5dp"/>
+                android:padding="5dp"
+                android:clickable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:focusable="true"/>
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -64,13 +67,15 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/NombreU"/>
+
                     <EditText
                         android:id="@+id/editT_nom"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:ems="10"
+                        android:hint="Insertar texto"
                         android:inputType="textPersonName"
-                        android:hint="Insertar texto" />
+                        android:enabled="false"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -175,13 +180,192 @@
                         android:text="@string/cu_pagar"
                         android:gravity="end" />
 
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Pinza_de_busto"/>
+                    <EditText
+                        android:id="@+id/etPinBusto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:hint="@string/Insertar_texto"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Distancia_de_busto"/>
+                    <EditText
+                        android:id="@+id/etDisBusto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:hint="@string/Insertar_texto"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Busto"/>
+                    <EditText
+                        android:id="@+id/etBusto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:hint="@string/Insertar_texto"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Frente"/>
+                    <EditText
+                        android:id="@+id/etFrente"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:hint="@string/Insertar_texto"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Espalda"/>
+                    <EditText
+                        android:id="@+id/etEspalda"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:hint="@string/Insertar_texto"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Cintura"/>
+                    <EditText
+                        android:id="@+id/etCintura"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:hint="@string/Insertar_texto"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Talla_frente"/>
+                    <EditText
+                        android:id="@+id/etTallaF"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:hint="@string/Insertar_texto"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Talla_espalda"/>
+                    <EditText
+                        android:id="@+id/etTallaE"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:hint="@string/Insertar_texto"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Cadera"/>
+                    <EditText
+                        android:id="@+id/etCadera"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:hint="@string/Insertar_texto"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Largo_de_la_falda"/>
+                    <EditText
+                        android:id="@+id/etLarFal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:hint="@string/Insertar_texto"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Largo_de_la_manga"/>
+                    <EditText
+                        android:id="@+id/etLarMan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:hint="@string/Insertar_texto"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Puno_alto"/>
+                    <EditText
+                        android:id="@+id/etPunAlto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:hint="@string/Insertar_texto"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Puno_bajo"/>
+                    <EditText
+                        android:id="@+id/etPunBajo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:inputType="numberDecimal"
+                        android:hint="@string/Insertar_texto"/>
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:text="@string/Caract" />
+
+                    <EditText
+                        android:id="@+id/etCaract"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:gravity="start|top"
+                        android:inputType="textMultiLine"
+                        android:lines="4"/>
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:text="@string/Telas" />
+
+                    <EditText
+                        android:id="@+id/etTelas"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="start|top"
+                        android:ems="10"
+                        android:inputType="textMultiLine"
+                        android:lines="4" />
+
                     <Button
                         android:id="@+id/saveButton"
                         android:onClick="btnSig"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@string/boton_siguiente"
-                        android:background="@drawable/shape_parrafo"/>
+                        android:background="@drawable/shape_parrafo"
+                        android:clickable="true"
+                        android:foreground="?attr/selectableItemBackground"
+                        android:focusable="true"/>
 
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
